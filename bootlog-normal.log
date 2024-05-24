@@ -1,0 +1,906 @@
+
+  BTRM
+  V1.3
+  MEM?
+  MEMP
+  CACH
+  CODE
+  ZBSS
+  MAIN
+  OTP?
+  OTPP
+  USBT
+  SNAN
+  IMG?
+  IMGL
+  UHD?
+  UHDP
+  RLO?
+  RLOP
+  UBI?
+  UBIP
+  PASS
+  ----
+  
+  U-Boot SPL 2019.07 A01 (Jul 02 2021 - 23:35:01 +0800)
+  Strap register: 0x7fffffef
+  Board is non secure
+  $SPL: 5.04L.02@314035 $
+  Apply trim code 0x2 reg 0x8 from otp to LDO controller...
+  SPI NAND ID: 0xef 0xaa 
+  128 MiB, block size: 128 KiB, page size: 2048
+  FFinit done
+  find magic number 0x75456e76 at address 0x40000
+  blob not found for magic 0xcb00cb sel 0x142f!
+  FFinit find magic number 0xcb00cb at address 0x45000
+  reading blob from 0x45000 offset 0x532c len 608
+  digest sha256 OK
+  FFinit find magic number 0x64447233 at address 0x20000
+  reading blob from 0x20000 offset 0xc len 34264
+  digest sha256 OK
+  mcb selector 0x142f checksum 0x7a750b53 safe_mode 0
+  
+  
+MemsysInit hpg0_generic 3.3.1.0 20180919
+  
+DDR3
+  
+8529DB48 80180000 801A0000 00000000 00000000 00E0549A
+  
+MCB rev=0x00000501 Ref ID=0x0549A Sub Bld=0x00E
+  
+Dram Timing 13-13-13
+  
+
+  
+start of memsys_begin
+  
+mc_cfg_init(): Initialize the default values on mc_cfg
+
+  init_memc_dram_profile(): Initializing MEMC DRAM profile
+
+  ---------------------------------------------------------------
+
+  MEMC DRAM profile (memc_dram_profile_struct) values:
+
+    dram_type    = DDR3
+
+  ====================================================
+
+  PART values:
+
+    part_speed_grade    = 1866 CL13 
+
+    part_size_Mbits     = 4096 (DRAM size in MegaBits)
+
+    part_row_bits       = 15 (number of row bits)
+
+    part_col_bits       = 10 (number of column bits)
+
+    part_ba_bits        = 3 (number of bank bits)
+
+    part_width_bits     = 16 (DRAM width in bits)
+
+  NUMER OF PARTS:
+
+    part_num            = 1 (Number of parts)
+
+  TOTAL values:
+
+    total_size_Mbits    = 4096 (DRAM size in MegaBits)
+
+    total_cs_bits       = 0 (number of cs bits, for dual_rank mode)
+
+    total_width_bits    = 16 (DRAM width in bits)
+
+    total_burst_bytes   = 16 (Number of bytes per DRAM access)
+
+    total_max_byte_addr = 0x1fffffff (Maximum/last DRAM byte address)
+
+                          (Number of bits in total_max_byte_addr is 29)
+
+                          (i.e. total_max_byte_addr goes from bit 0 to bit 28)
+
+    ddr_2T_mode         = 0
+
+    ddr_hdp_mode        = 0
+
+    large_page          = 1
+
+    ddr_dual_rank       = 0
+
+    cs_mode             = 0
+
+  MEMC timing (memc_dram_timing_cfg_struct) values:
+
+  ====================================================
+
+    MC_CHN_TIM_TIM1_0 register fields:
+
+      tCwl   = 9
+
+      tRP    = 13
+
+      tCL    = 13
+
+      tRCD   = 13
+
+    MC_CHN_TIM_TIM1_1 register fields:
+
+      tCCD_L = 4
+
+      tCCD   = 4
+
+      tRRD_L = 6
+
+      tRRD   = 6
+
+    MC_CHN_TIM_TIM1_2 register fields:
+
+      tFAW   = 33
+
+      tRTP   = 7
+
+      tRCr   = 45
+
+    MC_CHN_TIM_TIM1_3 register fields:
+
+      tWTR_L = 7
+
+      tWTR   = 7
+
+      tWR_L  = 14
+
+      tWR    = 14
+
+    MC_CHN_TIM_TIM2 register fields:
+
+      tR2R   = 0
+
+      tR2W   = 2
+
+      tW2R   = 2
+
+      tW2W   = 0
+
+      tAL    = 0
+
+      tRFC   = 244
+
+  ====================================================
+
+  %1 SSC enabled
+
+  
+
+  Poll PHY Status register
+  
+PHY Status= 1
+  
+Disable Auto-Refresh
+  
+[80180200] = 0x00000305
+  
+End of memsys_begin
+  
+Add/Ctl Alignment
+
+  Coarse Adj=0x087 deg, cmd steps=0x0C4
+
+  reg 0x801A0090 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A0094 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A0098 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A009C set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00A0 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00A4 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00A8 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00AC set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00B0 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00B4 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00B8 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00BC set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00C0 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00C4 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00C8 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00CC set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00D0 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00D4 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00D8 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00DC set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00E0 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00E4 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00E8 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00EC set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00F0 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00F4 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00F8 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A00FC set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A0100 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A0108 set to VDL 0x04B with Fine Adj=0x01 deg
+
+  reg 0x801A010C set to VDL 0x04B with Fine Adj=0x01 deg
+
+  HP RX TRIM
+
+  itrim = 0x0
+  
+lstrim = 0xA
+  
+
+  
+ZQ Cal HP PHY
+  
+ R in Ohm
+  
+ P: Finger=0x364 Term=0x7C Drv=0x27
+  
+ N: Finger=0x336 Term=0x75 Drv=0x27
+  
+
+  
+PLL Ref(Hz)=0x02FAF080 UI STEPS=0x062
+  
+ DDR CLK(MHz)=0x39F WL CLK dly(ps)=0x0C8 bitT(ps)=0x21B VDLsize(fs)=0x157C CLK_VDL=0x024
+  
+start of memc_init
+  
+[80180004] = 0x0110061f
+  
+[80180234] = 0x00000101
+  
+Enable Auto-Refresh
+  
+[80180110] = 0x11100f0e
+  
+[80180114] = 0x15141312
+  
+[80180118] = 0x19181716
+  
+[8018011c] = 0x001c1b1a
+  
+[80180124] = 0x04000000
+  
+[80180128] = 0x08070605
+  
+[8018012c] = 0x00000a09
+  
+[80180134] = 0x000d0c0b
+  
+ Writing to MC_CHN_CFG_CNFG reg; data=0x00000000
+  [80180100] = 0x00000000
+  
+cfg_memc_timing_ctrl() Called
+
+  [80180214] = 0x090d0d0d
+
+  
+[80180218] = 0x04040606
+  
+[8018021c] = 0x2100072d
+  
+[80180220] = 0x07070e0e
+  
+[80180224] = 0x120000f4
+  
+End of memc_init
+  
+start of pre_shmoo
+  
+[80180004] = 0xc110071f
+  
+end of pre_shmoo
+  
+
+
+  SHMOO 28nm
+
+  801A0000 801A0000 00000000 00020000 00000000
+  
+
+  
+Shmoo WL
+  
+
+  
+One UI Steps : 0x6F
+  
+
+  
+auto-clk result = 00B (filter=0C steps)
+
+  initial CLK shift = 024
+
+  final CLK shift   = 00B
+
+  
+
+     000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111
+  
+   000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000001
+  
+   012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+  
+00 S------------------X-------------------------------------------------------------------------------------------
+  
+01 S---------------------X----------------------------------------------------------------------------------------
+  
+
+
+  Shmoo RD En
+  
+FORCED WR ODT = 0x00001800
+  
+ DQSN DRIVE PAD CONTROL (from) (to)
+  
+ B0 00039ED5 00079ED5
+  
+ B1 00039ED5 00079ED5
+  
+B0 RISE UI=1 VDL=1D PICK UI=2 VDL=1D
+  
+B1 RISE UI=1 VDL=1D PICK UI=2 VDL=1D
+  
+   000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111
+  
+   000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000001
+  
+   012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+  
+00 --S-------------------------+X+++++++++++++++------------------------------------------------------------------
+  
+01 --S-----------------------+-+X+++++++++++++++------------------------------------------------------------------
+  
+
+  
+Shmoo RD DQ NP
+  
+DQS :
+  
+B0 VDL=62 ok
+  
+B1 VDL=62 ok
+  
+   000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111
+  
+   000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000001
+  
+   012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+  
+00 --------------------------------------++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++
+  
+01 --------------------------++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++--------
+  
+02 --------------------------------++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++++-
+  
+03 --------------------------------++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++-----
+  
+04 ----------------------------------+++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++-
+  
+05 ----------------------------++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++---------
+  
+06 ---------------------------+++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++++-----
+  
+07 -------------------------------+++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++---------
+  
+08 -------------------------------+++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++---------
+  
+09 ------------------------++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++--------------
+  
+10 ------------------------------+++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++------
+  
+11 ------------------------++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++-------------
+  
+12 --------------------------++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++------------
+  
+13 -------------------------+++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++-----------
+  
+14 -------------------------+++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++-----------
+  
+15 ---------------------------+++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++-------------
+  
+
+  
+Shmoo RD DQ P
+  
+   000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111
+  
+   000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000001
+  
+   012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+  
+00 --------------------------------------++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++
+  
+01 ---------------------------+++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++--------
+  
+02 --------------------------------++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++++-
+  
+03 --------------------------------++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++-----
+  
+04 ----------------------------------+++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++-
+  
+05 ----------------------------++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++---------
+  
+06 ----------------------------++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++++-----
+  
+07 --------------------------------+++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++--------
+  
+08 -------------------------------++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++----------
+  
+09 -------------------------+++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++--------------
+  
+10 ------------------------------++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++-------
+  
+11 ------------------------++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++-------------
+  
+12 --------------------------++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++-----------
+  
+13 ------------------------+++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++-----------
+  
+14 --------------------------++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++-----------
+  
+15 ---------------------------+++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++-------------
+  
+
+  
+Shmoo RD DQ N
+  
+   000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111
+  
+   000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000001
+  
+   012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+  
+00 ----------------------------------++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++
+  
+01 ------------------------+++++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++++++---
+  
+02 ------------------------------++++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++++
+  
+03 ---------------------------++++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++++---
+  
+04 -----------------------------++++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++++++
+  
+05 ------------------------++++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++++++-----
+  
+06 -----------------------+-++++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++++-----
+  
+07 ---------------------------+-++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++++----
+  
+08 -----------------------++++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++++-------
+  
+09 -----------------++++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++++-------------
+  
+10 ---------------------++++++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++++++-----
+  
+11 ---------------++++++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++++++-----------
+  
+12 -----------------+++++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++++++-----------
+  
+13 -----------------++++++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++++++---------
+  
+14 ------------------+-+++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++++-----------
+  
+15 ------------------++++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++++------------
+  
+
+
+  RD DQS adjustments :
+
+  BL0: Start: 0x62 Final: 0x62
+  
+BL1: Start: 0x62 Final: 0x62
+  
+
+  
+Shmoo WR DQ
+  
+   000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111
+  
+   000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000001
+  
+   012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+  
+00 ----------------+++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++-----------------------
+  
+01 ----+++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++--------------------------------
+  
+02 ------------+++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++------------------------
+  
+03 ------------+++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++---------------------------
+  
+04 ------------++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++----------------------
+  
+05 --------+++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++----------------------------
+  
+06 -------+++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++++------------------------
+  
+07 -----------+++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++----------------------------
+  
+08 ------------+++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++------------------------
+  
+09 ---+++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++++-----------------------------
+  
+10 ------------++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++-------------------------
+  
+11 -----+++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++-------------------------------
+  
+12 -----++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++++----------------------------
+  
+13 -++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++---------------------------------
+  
+14 -------++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++++--------------------------
+  
+15 --------+++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++-------------------------------
+  
+
+  
+Shmoo WR DM
+  
+WR DM
+  
+   000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111
+  
+   000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000001
+  
+   012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+  
+00 --++++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++++----------------------------
+  
+01 --++++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++++++----------------------------
+  
+start of memsys_end
+  
+[80180004] = 0x8110071f
+  
+[80180010] = 0x00000009
+  
+end of memsys_end
+  
+DDR test done successfully
+  
+FFinit find magic number 0x75456e76 at address 0x40000
+  FFinit find magic number 0x74506c21 at address 0x80000
+  reading blob from 0x80000 offset 0xc len 154424
+  digest sha256 OK
+  
+  U-Boot TPL 2019.07 A01 (Jul 02 2021 - 23:34:48 +0800)
+  Board is non secure
+  $TPL: 5.04L.02@314035 $
+  set cpu freq to 1500MHz
+  IMAGE is NAND
+  Trying to boot from NAND
+  SPI NAND ID: 0xef 0xaa 
+  128 MiB, block size: 128 KiB, page size: 2048
+  image from 2097152 to 134217728
+  RESET STATUS is 0x80000000
+  SELECTED Image 1 FIT_VOL_ID is 3
+  Found FIT format U-Boot
+  tpl_load_read: sector 7000000, count 3178, buf 07000000
+  tpl_load_read: sector 7000000, count 4176, buf 07000000
+  fit read sector 7000000, sectors=16758, dst=00000000, count=117440512, size=0x4176
+  tpl_load_read: sector 7003640, count 4044, buf 00004000
+  ## Checking hash(es) for Image atf ... sha256+ OK
+  tpl_load_read: sector 7007680, count d89c4, buf 01000000
+  ## Checking hash(es) for Image uboot ... sha256+ OK
+  tpl_load_read: sector 7882440, count d6d9, buf 010d89c0
+  ## Checking hash(es) for Image fdt_WE7202242TA ... sha256+ OK
+  tpl_load_read: sector 775ec40, count 6f37, buf 000c0000
+  ## Checking hash(es) for Image pmcfw_code ... sha256+ OK
+  tpl_load_read: sector 7765b40, count 674, buf 80380100
+  ## Checking hash(es) for Image pmcfw_data ... sha256+ OK
+  
+  
+  U-Boot 2019.07 A01 (Dec 08 2022 - 15:40:53 +0800) Arcadyan Build, Build: 5.04L.02@314035
+  
+  Model: Arcadyan RE-TA
+  DRAM:  512 MiB
+  max supported leds 32[32]
+   Parallel CLED interface found
+  BCA CLED Controller initialized
+  SW led 15 registered
+  SW led 16 registered
+  SW led 17 registered
+  SW led 26 registered
+  pmc firmware data has been loaded to 0x80380100, size=1596B
+  pmc firmware code has been loaded to 0xc0000, size=28419B
+  Take PMC out of reset
+  waiting for PMC finish booting
+  PMC rev: 3.2.2.265063 running
+  pmc_init:PMC using DQM mode
+  Chip ID: BCM6755_A1
+  $Uboot: 5.04L.02@314035 $
+  WDT:   Started with servicing (80s timeout)
+  NAND:  SPINAND ID 0xef 0xaa 0x21 0x0
+  128 MiB
+  MMC:   sdhci: 0
+  Loading Environment from BOOT_MAGIC... ENV_BOOT_MAGIC_LOAD
+  found magic at 40000
+  good crc
+  resize from 16384 to 8192
+  OK
+  In:    serial0
+  Out:   serial0
+  Err:   serial0
+  Model: Arcadyan RE-TA
+  Board is non secure
+  Now we are in UBOOT proper
+  HTTPD: ready for starting
+  boot_device is NAND
+  adjusted to skip last 8 blocks
+  image in NAND from 2097152 to 133169152
+  
+  device nand0 <spi1.0>, # parts = 2
+   #: namesizeoffsetmask_flags
+   0: loader              0x002000000x000000000
+   1: image               0x07d000000x002000000
+  
+  active partition: nand0,0 - (loader) 0x00200000 @ 0x00000000
+  
+  defaults:
+  mtdids  : nand0=spi1.0
+  mtdparts: spi1.0:2097152(loader)
+  Net:   switch set mdio_base 80411300
+  calling phy_wkard_timeout 25000
+  eth0: systemport@0x80400000
+  Hit any key to stop autoboot:  2  1  0 
+  [RAMBOOT] WPS button wasn't pressed
+  [RAMBOOT] found no valid environment variable rambootcounter.
+  IMAGE=NAND:2M,128M
+  MCB=142f
+  arc_ov_id=0
+  boardid=WE7202242TA
+  bootcmd=arc_preinit;printenv;sdk boot_img
+  bootdelay=2
+  env_boot_magic=16384@0x40000,0xad000
+  ethact=systemport@0x80400000
+  ethaddr=[[ETHMACADDR]]
+  fdtcontroladdr=1defd888
+  filesize=500
+  init=/sbin/preinit
+  ipaddr=192.168.1.1
+  mtddevname=loader
+  mtddevnum=0
+  mtdids=nand0=spi1.0
+  mtdparts=spi1.0:2097152(loader),131072000@2097152(image)
+  nand_erasesize=20000
+  nand_oobsize=40
+  nand_writesize=800
+  netmask=255.255.255.0
+  nummacaddrs=10
+  partition=nand0,0
+  rambootcounter=0
+  serverip=192.168.1.100
+  stderr=serial0
+  stdin=serial0
+  stdout=serial0
+  
+  Environment size: 584/8188 bytes
+  No size specified -> Using max size (9032388)
+  Read 9032388 bytes from volume bootfs1 to 02000000
+  Read 4 bytes from volume rootfs1 to 1defd60c
+  ## Loading kernel from FIT Image at 02000000 ...
+     Using 'conf_lx_WE7202242TA' configuration
+     Verifying Hash Integrity ... OK
+     Trying 'kernel' kernel subimage
+       Description:  4.19 kernel
+       Type:         Kernel Image
+       Compression:  lzo compressed
+       Data Start:   0x020e1048
+       Data Size:    6806569 Bytes = 6.5 MiB
+       Architecture: ARM
+       OS:           Linux
+       Load Address: 0x00108000
+       Entry Point:  0x00108000
+       Hash algo:    sha256
+       Hash value:   8bda4d6a6c567e40388210b00e44af3aecd01a03fc8949b7a1fd953dd089d049
+     Verifying Hash Integrity ... sha256+ OK
+  ## Loading fdt from FIT Image at 02000000 ...
+     Using 'conf_lx_WE7202242TA' configuration
+     Verifying Hash Integrity ... OK
+     Trying 'fdt_WE7202242TA' fdt subimage
+       Description:  dtb
+       Type:         Flat Device Tree
+       Compression:  uncompressed
+       Data Start:   0x02882444
+       Data Size:    54997 Bytes = 53.7 KiB
+       Architecture: ARM
+       Hash algo:    sha256
+       Hash value:   c5b2c4aed2cadb0e14b8ba836c07de00bd01657436360ef6723b3258b34388bf
+     Verifying Hash Integrity ... sha256+ OK
+     Booting using the fdt blob at 0x2882444
+     Uncompressing Kernel Image ... OK
+     Loading Device Tree to 07f72000, end 07fff6d4 ... OK
+  appending extra boot args to linux boot command line:
+     mtdparts=spi1.0:2097152(loader),131072000@2097152(image) root=/dev/ubiblock0_4 ubi.mtd=1 ubi.block=0,4 rootfstype=squashfs init=/sbin/preinit cma=0M
+  
+  Starting kernel ...
+  
+  remove sysport
+  system port tx wait 0 timeout 1000 p 0 c 0
+  sysport reset 0
+  Booting Linux on physical CPU 0x0
+  Linux version 4.19.151 (tim@sw2-build9) (gcc version 9.2.0 (Buildroot 2019.11.1)) #1 SMP PREEMPT Thu Dec 8 15:13:49 CST 2022
+  CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c5387d
+  CPU: div instructions available: patching division code
+  CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+  OF: fdt: Machine model: Arcadyan RE-TA
+  bootconsole [earlycon0] enabled
+  Memory policy: Data cache writealloc
+  On node 0 totalpages: 131072
+    Normal zone: 1024 pages used for memmap
+    Normal zone: 0 pages reserved
+    Normal zone: 131072 pages, LIFO batch:31
+  psci: probing for conduit method from DT.
+  psci: PSCIv1.1 detected in firmware.
+  psci: Using standard PSCI v0.2 function IDs
+  psci: MIGRATE_INFO_TYPE not supported.
+  psci: SMC Calling Convention v1.0
+  random: get_random_bytes called from start_kernel+0x9c/0x490 with crng_init=0
+  percpu: Embedded 14 pages/cpu s27724 r8192 d21428 u57344
+  pcpu-alloc: s27724 r8192 d21428 u57344 alloc=14*4096
+  pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+  Built 1 zonelists, mobility grouping on.  Total pages: 130048
+  Kernel command line: mtdparts=spi1.0:2097152(loader),131072000@2097152(image) root=/dev/ubiblock0_4 ubi.mtd=1 ubi.block=0,4 rootfstype=squashfs init=/sbin/preinit cma=0M console=ttyAMA0 earlyprintk debug irqaffinity=0 pci=pcie_bus_safe isolcpus=3
+  log_buf_len individual max cpu contribution: 4096 bytes
+  log_buf_len total cpu_extra contributions: 12288 bytes
+  log_buf_len min size: 16384 bytes
+  log_buf_len: 32768 bytes
+  early log buf free: 14476(88%)
+  Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+  Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+  Memory: 507044K/524288K available (6144K kernel code, 1718K rwdata, 1296K rodata, 1024K init, 240K bss, 17244K reserved, 0K cma-reserved, 0K highmem)
+  Virtual kernel memory layout:
+      vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+      fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+      vmalloc : 0xe0800000 - 0xff800000   ( 496 MB)
+      lowmem  : 0xc0000000 - 0xe0000000   ( 512 MB)
+      pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+      modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+        .text : 0x(ptrval) - 0x(ptrval)   (7136 kB)
+        .init : 0x(ptrval) - 0x(ptrval)   (1024 kB)
+        .data : 0x(ptrval) - 0x(ptrval)   (1719 kB)
+         .bss : 0x(ptrval) - 0x(ptrval)   ( 241 kB)
+  SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+  rcu: Preemptible hierarchical RCU implementation.
+  Tasks RCU enabled.
+  NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+  arch_timer: cp15 timer(s) running at 50.00MHz (phys).
+  clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0xb8812736b, max_idle_ns: 440795202655 ns
+  sched_clock: 56 bits at 50MHz, resolution 20ns, wraps every 4398046511100ns
+  Switching to timer-based delay loop, resolution 20ns
+  BRCM Legacy Drivers' Helper, all legacy drivers' IO memories/interrupts should be remapped here
+       Remapping interrupts...
+               hwirq      virq
+                 60        20
+                 61        21
+                 66        22
+                110        23
+                 69        24
+                152        25
+                153        26
+                154        27
+                155        28
+                156        29
+                157        30
+                158        31
+                159        32
+                 78        33
+                 79        34
+                 80        35
+                 81        36
+                 82        37
+                 83        38
+                 84        39
+                 85        40
+                104        41
+                105        42
+                106        43
+                128        44
+                129        45
+                130        46
+                131        47
+                132        48
+                133        49
+                134        50
+                135        51
+                136        52
+                137        53
+                138        54
+                139        55
+                148        56
+                149        57
+       Remapping IO memories...
+               phys              virt          size
+         0000000080180000  00000000e0840000  00024000
+         00000000ff800000  00000000e0820000  00013000
+         00000000ff810000  00000000e0880000  0004b000
+         00000000ffe00000  00000000e0900000  00100000
+         00000000ff860000  00000000e0806000  00002000
+         0000000083010a00  00000000e0809a00  00000100
+         000000008000c000  00000000e080c000  00003fff
+         0000000083010000  00000000e0811000  00001000
+         0000000083018000  00000000e0813000  00001000
+         0000000083020000  00000000e0815000  00001000
+         0000000083028000  00000000e0817000  00001000
+         0000000083030000  00000000e0819000  00001000
+         0000000083038000  00000000e081b000  00001000
+         0000000083040000  00000000e081d000  00001000
+         0000000083050000  00000000e0834000  00001000
+         0000000083058000  00000000e0836000  00001000
+         0000000083048000  00000000e0838000  00001000
+         00000000810a0000  00000000e083a000  00001000
+         0000000081060000  00000000e083c000  00003000
+         00000000ffff0000  00000000e0865000  00001000
+         0000000083000000  00000000e0867000  00001000
+         000000008306c000  00000000e0869000  00001000
+         0000000080400000  00000000e08e0000  00013000
+         0000000080500000  00000000e0a20000  00013000
+         0000000081100000  00000000e0a80000  00091000
+  Calibrating delay loop (skipped), value calculated using timer frequency.. 100.00 BogoMIPS (lpj=50000)
+  pid_max: default: 32768 minimum: 301
+  Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+  Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+  CPU: Testing write buffer coherency: ok
+  Setting up static identity map for 0x200000 - 0x200060
+  rcu: Hierarchical SRCU implementation.
+  CCI hardware cache coherency enabled
+  bootloader version  U-Boot 2019.07 A01 (Dec 08 2022 - 15:40:53 +0800) Arcadyan Bu
+  
+  
+  inMemNvramData.szBoardId WE7202242TA
+  smp: Bringing up secondary CPUs ...
+  smp: Brought up 1 node, 4 CPUs
+  SMP: Total of 4 processors activated (400.00 BogoMIPS).
+  CPU: All CPU(s) started in SVC mode.
+  devtmpfs: initialized
+  VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+  clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+  futex hash table entries: 1024 (order: 4, 65536 bytes)
+  pinctrl core: initialized pinctrl subsystem
+  NET: Registered protocol family 16
+  DMA: preallocated 256 KiB pool for atomic coherent allocations
+  cpuidle: using governor ladder
+  PMC driver initcall
+  PMC driver scanning DT
+  pmc match PMC brcm,bca-pmc-3-2
+       Remapping PMC IO memories...
+               phys              virt          size
+       0x0000000080301018 0x00000000e0878018 0x00005080
+       0x0000000080320000 0x00000000e0871000 0x00000240
+       0x0000000080300400 0x00000000e0873400 0x000005d0
+       0x0000000080380000 0x00000000e0875000 0x00001000
+  pmc_init:PMC using DQM mode
+  Serial: AMBA PL011 UART driver
+  ff812000.serial0: ttyAMA0 at MMIO 0xff812000 (irq = 63, base_baud = 0) is a PL011 rev3
+  console [ttyAMA0] enabled
+  bootconsole [earlycon0] disabled
+  
